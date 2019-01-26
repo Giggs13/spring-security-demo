@@ -10,7 +10,7 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 @Configuration
 @EnableWebMvc
 @ComponentScan(basePackages = "com.giggs13.springsecurity")
-public class AppConfig {
+public class AppConfiguration {
 
     @Bean
     public ViewResolver viewResolver() {

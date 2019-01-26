@@ -5,11 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.giggs13</groupId>
-    <artifactId>spring-security-demo</artifactId>
+    <artifactId>spring-security-demo-01-base-app</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
 
-    <name>spring-security-demo</name>
+    <name>spring-security-demo-01-base-app</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -18,7 +18,8 @@
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
 
-        <springframework.version>5.0.10.RELEASE</springframework.version>
+        <springframework.version>5.1.4.RELEASE</springframework.version>
+        <spring-security.version>5.1.3.RELEASE</spring-security.version>
 
         <log4j2.version>2.11.1</log4j2.version>
         <junit-platform.version>5.3.1</junit-platform.version>
@@ -29,6 +30,16 @@
             <groupId>org.springframework</groupId>
             <artifactId>spring-webmvc</artifactId>
             <version>${springframework.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-web</artifactId>
+            <version>${spring-security.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-config</artifactId>
+            <version>${spring-security.version}</version>
         </dependency>
         <dependency>
             <groupId>javax.servlet</groupId>
@@ -85,7 +96,7 @@
     </dependencies>
 
     <build>
-        <finalName>spring-security-demo</finalName>
+        <finalName>spring-security-demo-01-base-app</finalName>
 
         <plugins>
             <plugin>
